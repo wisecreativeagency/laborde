@@ -1,0 +1,33 @@
+# Track only custom code. WordPress core, uploads, config and
+# third-party plugins/themes live on the server and are managed with WP-CLI.
+
+# Everything at the site root (core, wp-config.php, .php-ini, ...)
+/*
+!/.gitignore
+!/README.md
+!/CLAUDE.md
+!/wp-content/
+
+# wp-content: only themes and plugins
+/wp-content/*
+!/wp-content/themes/
+!/wp-content/plugins/
+!/wp-content/mu-plugins/
+
+# Themes: only custom ones (prefix laborde)
+/wp-content/themes/*
+!/wp-content/themes/laborde*/
+
+# Plugins: only custom ones (prefix laborde)
+/wp-content/plugins/*
+!/wp-content/plugins/laborde*/
+
+# Build / OS noise
+node_modules/
+vendor/
+.env
+.env.*
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
