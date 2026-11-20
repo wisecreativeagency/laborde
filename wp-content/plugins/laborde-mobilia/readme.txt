@@ -18,7 +18,7 @@ Add to wp-config.php, above "That's all, stop editing!":
 == Usage ==
 
 Tools → Mobilia → Test connection. Requests an OAuth2 token (client_credentials)
-and makes one read-only GET request (default: first page of /inmuebles), then
+and makes one read-only GET request (default: first page of /inmuebles; paginate with numeroPagina + tamanoPagina, max 100), then
 shows the HTTP status, headers and response body. Nothing is imported or saved
 yet, apart from the cached token and the last result (a transient that expires
 after 15 minutes). Credentials and tokens are never displayed.

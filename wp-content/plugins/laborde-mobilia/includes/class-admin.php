@@ -65,7 +65,7 @@ class Admin {
 		if ( 'inmuebles' === $path ) {
 			$query = array_merge(
 				array(
-					'pagina'       => 1,
+					'numeroPagina' => 1,
 					'tamanoPagina' => $page_size,
 				),
 				$query
@@ -146,7 +146,7 @@ class Admin {
 						<th scope="row"><label for="lm-size"><?php esc_html_e( 'Page size', 'laborde-mobilia' ); ?></label></th>
 						<td>
 							<input type="number" id="lm-size" name="page_size" min="1" max="100" value="5" class="small-text">
-							<p class="description"><?php esc_html_e( 'Only used for inmuebles (pagina=1&tamanoPagina=N).', 'laborde-mobilia' ); ?></p>
+							<p class="description"><?php esc_html_e( 'Only used for inmuebles (numeroPagina=1&tamanoPagina=N, max 100).', 'laborde-mobilia' ); ?></p>
 						</td>
 					</tr>
 					<tr>
